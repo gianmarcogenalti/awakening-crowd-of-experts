@@ -14,7 +14,7 @@ In standard online learning, the set of experts is fixed. In the ACE setting, **
 
 ## 📊 Real-World Application: Expanding Momentum Ensembles
 
-We model a financial forecasting environment where a learning algorithm must predict the daily directional movement of an asset. The algorithm selects from an expanding ensemble of momentum-based trading heuristics. Each expert $i$ represents a momentum rule parameterized by a lookback window of length $i$ (e.g., predicting upward movement if today's price is higher than the price $i$ days ago).Because an $i$-day lookback rule mathematically cannot generate a prediction before day $i$, expert $i$ deterministically "awakens" and enters the active decision pool at exactly round $t=i$.
+We model a financial forecasting environment where a learning algorithm must predict the daily directional movement of an asset. The algorithm selects from an expanding ensemble of momentum-based trading heuristics. Each expert $i$ represents a momentum rule parameterized by a lookback window of length $i$ (e.g., predicting upward movement if today's price is higher than the price $i$ days ago). Because a lookback rule of span $i$ mathematically cannot generate a prediction before day $i$, expert $i$ deterministically "awakens" and enters the active decision pool at exactly round $t=i$.
 
 This natively satisfies the core ACE condition where the action space continuously expands over time.
 
