@@ -52,7 +52,7 @@ In this instance, the first expert to appear is also the best ($\mu_1 = 0.9$), a
 | **Total Arm Switches** | 3.35 ± 1.20 | 1553.15 ± 6.87 |
 | **Total Optimal Pulls** | 4974.05 ± 11.07 | 58.85 ± 1.10 |
 
-![LCB vs UCB on First-Base Instance](plots/first-best_instance.png)
+![LCB vs UCB on First-Base Instance](plots/first-best_instance.jpeg)
 
 ### 2. Uniform Experts
 In this instance, the expert appearing at time $t$ has its average reward $\mu_t$ sampled from a uniform distribution in $[0.1,0.9]$. An optimistic policy struggles in this type of instances: exploring always results in incurred regret. We simulate the environment $20$ times, setting $T=5000$.
@@ -63,7 +63,7 @@ In this instance, the expert appearing at time $t$ has its average reward $\mu_t
 | **Total Arm Switches** | 8.95 ± 1.18 | 640.70 ± 4.41 |
 | **Total Optimal Pulls** | 320.35 ± 132.34 | 69.20 ± 8.66 |
 
-![LCB vs UCB on Uniform Experts Instance](plots/uniform_experts_instance.png)
+![LCB vs UCB on Uniform Experts Instance](plots/uniform_experts_instance.jpeg)
 
 ### 3. Frequent Switches Instance
 In this instance, we mimic the lower bound construction by defining a large number of epochs ($T^{1/3}$) and letting the optimum increase by the minimum possible amount at every epoch. LCB still outperforms UCB.
@@ -74,4 +74,4 @@ In this instance, we mimic the lower bound construction by defining a large numb
 | **Total Arm Switches** | 62.35 ± 5.99 | 2172.05 ± 21.81 |
 | **Total Optimal Pulls** | 294.00 ± 0.00 | 2639.40 ± 16.06 |
 
-![LCB vs UCB on Frequent Switches Instance](plots/frequent_switches_instance.png)
+![LCB vs UCB on Frequent Switches Instance](plots/frequent_switches_instance.jpeg)
