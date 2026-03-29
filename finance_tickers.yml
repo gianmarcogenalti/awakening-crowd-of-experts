@@ -1,0 +1,23 @@
+# Broad Market Indices
+^GSPC: "S&P 500 (Large Cap Blend)"
+^IXIC: "NASDAQ (Tech-Heavy Index)"
+^RUT: "Russell 2000 (Small Cap Volatility)"
+
+# Big Tech / High Momentum
+AAPL: "Apple (Consumer Tech)"
+NVDA: "Nvidia (High Growth/Semiconductors)"
+
+# Financials / Value / Cyclical
+JPM: "JPMorgan Chase (Banking)"
+CAT: "Caterpillar (Industrials/Macro)"
+
+# Defensive / Low Volatility
+JNJ: "Johnson & Johnson (Healthcare)"
+WMT: "Walmart (Consumer Staples)"
+
+# Energy and Commodities
+XOM: "ExxonMobil (Energy)"
+GLD: "SPDR Gold Trust (Safe Haven Asset)"
+
+# Extreme Volatility
+BTC-USD: "Bitcoin (Crypto/High Variance)"
