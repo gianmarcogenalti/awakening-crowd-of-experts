@@ -11,4 +11,4 @@ simulate_and_plot_LCB_vs_UCB(OptimismTrapInstance, T, n_seeds, instance_name='fi
 simulate_and_plot_LCB_vs_UCB(UniformRandomInstance, T, n_seeds, instance_name='uniform_experts_instance')
 
 # High number of optimum switches
-simulate_and_plot_LCB_vs_UCB(FrequentSwitcherInstance, T, n_seeds, env_params=[int(T**(1/3))], instance_name='frequent_switches_instance')
+simulate_and_plot_LCB_vs_UCB(FrequentSwitcherInstance, T, n_seeds, env_params=[int(T**(1/5))], instance_name='frequent_switches_instance')
