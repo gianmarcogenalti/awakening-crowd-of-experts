@@ -68,12 +68,12 @@ In this instance, the expert appearing at time $t$ has its average reward $\mu_t
 ![LCB vs UCB on Uniform Experts Instance](plots/uniform_experts_instance.png)
 
 ### 3. Frequent Switches Instance
-In this instance, we mimic the lower bound construction by defining a large number of epochs ($T^{1/3}$) and letting the optimum increase by the minimum possible amount at every epoch. LCB still outperforms UCB.
+In this instance, we mimic the lower bound construction by defining a large number of epochs (e.g., $T^{1/5}$) and letting the optimum increase by the minimum possible amount at every epoch. LCB still outperforms UCB.
 
 | Metric | $\pi_{LCB}$ (Proposed) | $\pi_{UCB}$ (Baseline) |
 | :--- | :--- | :--- |
-| **Final Cumulative Regret** | 422.36 ± 4.84 | 856.19 ± 11.39 |
-| **Total Arm Switches** | 62.35 ± 5.99 | 2172.05 ± 21.81 |
-| **Total Optimal Pulls** | 294.00 ± 0.00 | 2639.40 ± 16.06 |
+| **Final Cumulative Regret** | 273.16 ± 3.89 | 1591.44 ± 15.60 |
+| **Total Arm Switches** | 15.40 ± 1.28 | 3589.25 ± 23.05 |
+| **Total Optimal Pulls** | 2814.75 ± 31.11 | 1417.00 ± 22.97 |
 
 ![LCB vs UCB on Frequent Switches Instance](plots/frequent_switches_instance.png)
