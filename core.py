@@ -158,7 +158,7 @@ def simulate_and_plot_LCB_vs_UCB(env_type, T, n_seeds, instance_name=" ", env_pa
 
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 
-    png_filename = f"plots/{instance_name}..png"
+    png_filename = f"plots/{instance_name}.png"
     plt.savefig(png_filename, format='png', bbox_inches='tight')
     print(f"Plot saved successfully as: {png_filename}")
 
@@ -262,7 +262,7 @@ def evaluate_sensitivity_to_upsilon(T, n_seeds):
 
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 
-    png_filename = "plots/stochastic_ace_upsilon_sensitivity.png"
+    png_filename = "plots/stochastic_ace_upsilon_sensitivitypng"
     plt.savefig(png_filename, format='png', bbox_inches='tight')
     print(f"Plot saved successfully as: {png_filename}")
 
@@ -347,7 +347,7 @@ def run_reproducible_campaign(tickers, chunk_size=4):
                 axs[1, i].legend(loc='upper left')
                     
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-        png_filename = f"plots/real_world_financial_part_{part_number}..png"
+        png_filename = f"plots/real_world_financial_part_{part_number}.png"
         plt.savefig(png_filename, format='png', bbox_inches='tight')
         print(f"Plot saved successfully as: {png_filename}")
         plt.show() 
